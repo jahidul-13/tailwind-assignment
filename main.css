@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+body{
+    background-color: #FAFAFA;
+    font-family: "Plus Jakarta Sans", serif; 
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+
+    .tag{
+        @apply border border-[#F44335] px-1.5 py-0.5  rounded-full hover:bg-[#F44335] hover:text-white transition-all duration-300 ;
+    }
+
+    .course-tag{
+        @apply border border-[#232323] px-1.5 py-0.5  rounded-full  hover:bg-[#00FF84] transition-all duration-300 cursor-pointer text-xs md:text-lg ;
+    }
+
+    .container-1{
+        @apply pl-16 pr-16;
+    }
+
+    .nav-li{
+        @apply  cursor-pointer hover:text-[#F44335] transition-all duration-300;
+    }
+
+    .hero-span{
+        @apply text-[#00FF84] font-bold text-base md:text-xl;
+    }
+
+    .hero-para{
+        @apply text-[#2D3142] dark:text-white text-sm md:text-base;
+    }
+
+}
